@@ -854,7 +854,7 @@ async def deezer(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "GeezProject"
+        user.first_name = "Araa"
     usar = user
     wew = usar.id
     try:
@@ -904,7 +904,7 @@ async def deezer(client: Client, message_: Message):
     queryy = text[1]
     query = queryy
     res = lel
-    await res.edit(f"**Sedang Mencari Lagu** `{query}` **dari deezer**")
+    await res.edit(f"**Sedang Mencari Lagu** `{query}` **dari Araa**")
     try:
         songs = await arq.deezer(query,1)
         if not songs.ok:
@@ -968,7 +968,7 @@ async def deezer(client: Client, message_: Message):
         chat_id=message_.chat.id,
         reply_markup=keyboard,
         photo="final.png",
-        caption=f"🎼️ **Sedang Memutar Lagu** [{title}]({url}) **Via Deezer**",
+        caption=f"🎼️ **Sedang Memutar Lagu** [{title}]({url}) **Via Araa**",
     )
     os.remove("final.png")
 
